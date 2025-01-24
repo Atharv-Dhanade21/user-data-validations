@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+    <div class="card">
+    <form id="userForm">
+        <h2>User Data Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <span id="phoneError" class="error"></span><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <span id="addressError" class="error"></span><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+    <div id="notification"></div>
+</body>
+</html>
